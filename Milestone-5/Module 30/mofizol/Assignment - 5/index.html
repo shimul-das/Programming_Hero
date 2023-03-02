@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" data-theme="light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <nav style="border-radius: 5px; background-color: #a0d4db;" class="nav-bar">
+            <div class="left">
+                <a href="#" class="first-nav">Interactive</a><br>
+                <a href="#" class="second-nav">Geometry Genius</a>
+            </div>
+            <div class="right">
+                <a href="faq.html">Blog</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div class="products-cetails w-full md:w-[60%] lg:w-[70%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- second card  -->
+                <div id="tri-card-main" class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure>
+                        <img id="tri-image" class="w-full h-40" src="./images/triangle.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title, mx-auto" id="first-name">Triangle</h2>
+                        <h2 class="mx-auto"> Area (A) = <span>0.5 x b </span>x h</h2>
+
+                        <div class="flex flex-row">
+                            <input type="text" id="input-1" placeholder="b"
+                                class="input input-bordered input-sm w-20 " />
+                            <p>cm <span> </span></p>
+
+                            <input type="text" id="input-2" placeholder="h" 
+                                class="input input-bordered input-sm w-20 " />
+                            <p> cm</p>
+                        </div>
+
+                        <div class="card-actions mx-auto">
+                            <button class="btn btn-info" id="first-card">
+                                Calculate
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full h-40" src="./images/rectangle.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title, mx-auto" id="second-name">Rectangle</h2>
+                        <h2 class="mx-auto">Area (A) = W x I</h2>
+
+                        <div class="flex flex-row">
+                            <input type="text" id="input-3" placeholder="w"
+                                class="input input-bordered input-sm w-20 " />
+                            <p>cm <span> </span></p>
+
+                            <input type="text" placeholder="l" id="input-4"
+                                class="input input-bordered input-sm w-20 " />
+                            <p> cm</p>
+                        </div>
+
+                        <div class="card-actions mx-auto ">
+                            <button class="btn btn-info" id="second-card">
+                                Calculate
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full h-40" src="./images/parallelogram.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title, mx-auto" id="third-name">Parallelogram</h2>
+                        <h2 class="mx-auto"> Area (A) = b x h</h2>
+
+                        <div class="flex flex-row">
+                            <input type="text" id="input-5" placeholder="b=10"
+                                class="input input-bordered input-sm w-20 " />
+                            <p>cm, <span> </span></p>
+
+                            <input type="text" placeholder="h=12" id="input-6"
+                                class="input input-bordered input-sm w-20 " />
+                            <p> cm</p>
+                        </div>
+
+                        <div class="card-actions mx-auto ">
+                            <button class="btn btn-info" id="third-card">
+                                Calculate
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full h-40" src="./images/rhombus.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title, mx-auto" id="fourth_name">Rhombus</h2>
+                        <h2 class="mx-auto"> Area (A) = <span>0.5 x d<sub>1</sub></span>x d<sub>2</sub></h2>
+                        <h2 class="mx-auto">d<sub>1</sub>=<span id="r_one">16</span>cm <span>&nbsp d <sub>2</sub>=<span id="r_two">8</span>cm</span></h2>
+
+
+                        <div class="card-actions mx-auto ">
+                            <button class="btn btn-info" id="fourth-card">
+                                Calculate
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full h-40" src="./images/pentagon.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title, mx-auto" id="fifth-name">Pentagon</h2>
+                        <h2 class="mx-auto"> Area (A) = <span>0.5 x p</span> x b</h2>
+
+                        <div class="flex flex-row">
+                            <input type="text" id="input-9" placeholder="p=6"
+                                class="input input-bordered input-sm w-20 " />
+                            <p>cm <span> </span></p>
+
+                            <input type="text" placeholder="b-11" id="input-10"
+                                class="input input-bordered input-sm w-20 " />
+                            <p> cm</p>
+                        </div>
+
+                        <div class="card-actions mx-auto ">
+                            <button class="btn btn-info" id="fifth-card">
+                                Calculate
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure>
+                        <img class="w-full h-40" src="./images/ellipse.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title, mx-auto" id="sixth-name">Ellipse</h2>
+                        <h2 class="mx-auto"> Area (A) = <span>Area (A) = &#x213c;a</span>b</h2>
+
+                        <div class="flex flex-row">
+                            <input type="text" id="input-11" placeholder="b"
+                                class="input input-bordered input-sm w-20 " />
+                            <p>cm <span> </span></p>
+
+                            <input type="text" placeholder="h" id="input-12"
+                                class="input input-bordered input-sm w-20 " />
+                            <p> cm</p>
+                        </div>
+
+                        <div class="card-actions mx-auto ">
+                            <button class="btn btn-info" id="sixth-card">
+                                Calculate
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="cart-details w-full md:w-[40%] lg:w-[30%] mx-auto ml-5">
+                <h1 class="text-3xl text-center font-bold underline mt-5 ">
+                    Area Calculation <span id="total-product"></span>
+                </h1>
+                <div class="overflow-x-auto">
+                    <table id="table-body" class="table w-full">
+                        <thead>
+                            <tr>
+                                <td>
+                                    <ol id="Calculate-area">
+                                        <!-- <li>triangle</li>
+                                    <li>rectangle</li> -->
+                                    </ol>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Total</th>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+                            <!-- <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Blue</td>
+                      </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+
+    <!-- javascript  -->
+    <script src="js/validation.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/function.js"></script>
+    <script src="js/bg-color.js"></script>
+    
+
+</body>
+
+</html>

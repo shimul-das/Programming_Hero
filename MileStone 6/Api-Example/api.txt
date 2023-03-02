@@ -1,0 +1,5 @@
+https://api.kanye.rest/
+https://jsonplaceholder.typicode.com/guide/
+https://randomuser.me/
+https://www.themealdb.com/api.php
+https://restcountries.com/#api-endpoints-v3-code

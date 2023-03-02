@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DSom Summary</title>
+</head>
+<body>
+    <h1>Final Dom Event Handlers</h1>
+    <button onclick="handleOnClick()">Handle Event by Add onclick Function</button>
+    <h3 id="handler-status"> Default Text</h3>
+    <button id="event-listner">Handle event by addEventListner</button><br>
+    <p id="input-text-display">Input Text</p>
+    <input id="input-field" type="text"><br><br>
+    <button id="update-btn">Update</button>
+    <script>
+        //option 1 that we will use
+        function handleOnClick(){
+            console.log('Button Clicked')
+            const handlerstatus=document.getElementById('handler-status');
+            handlerstatus.innerText='this text by changed event handler';
+        }
+        //Option two that we will use
+        document.getElementById('event-listner').addEventListener('click',function(){
+            const handlerstatus=document.getElementById('handler-status');
+            handlerstatus.innerText='this text by changed event listener';
+        })
+        //option two agani
+        document.getElementById('update-btn').addEventListener('click',function(){
+            console.log('update button click');
+            const inputField=document.getElementById('input-field');
+            console.log(inputField.value);
+            const inputText=inputField.value;
+            const p=document.getElementById('input-text-display');
+            p.innerText=inputText;
+            inputField.value= '';
+        })
+    </script>
+</body>
+</html>

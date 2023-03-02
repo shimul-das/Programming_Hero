@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dom Events</title>
+</head>
+<body>
+    <h2>Ajke Dom Er special events.</h2>
+    <button onclick="console.log(7)">Click me</button>
+    <button onclick="console.log(60)">Another Button</button><br>
+    <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+    <button onclick="document.body.style.backgroundColor='red'">Make Red</button>
+    <button id="make-black">Make Black</button>
+    <button id="make-green">Make Green</button>
+    <button id="make-pink">Make Pink</button>
+    <button id="make-brown">Make brown</button>
+
+    <!-- another set button for eventlistener -->
+    <!-- type 2 -->
+    <button onclick="makecolor()">Color blue</button>
+    <script src="js/event.js"></script>
+    <script>
+        // function makecolor(){
+        //     document.body.style.backgroundColor='blue';
+        // }
+        const pinkButton = document.getElementById('make-pink');
+        pinkButton.addEventListener('click',makePink)
+        function makePink(){
+            document.body.style.background='pink';
+        }
+
+        const brownButton = document.getElementById('make-brown');
+        pinkButton.addEventListener('click',function makeBrown(){
+            document.body.style.background='#A52A2A';
+        });
+        
+    </script>
+    //document.getElementById('id_name').addEventListener('click',function(){})
+    <!-- type 3 -->
+</body>
+</html>

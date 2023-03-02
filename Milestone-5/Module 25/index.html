@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Tour Of Dom</title>
+    <style>
+        #fruits-title{
+            color:black;
+        }
+        .important-place{
+            color:aquamarine
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Dom</h1>
+    </header>
+    <main id="main-container">
+        <section>
+        <h1>
+            My Awsome dom de baba
+        </h1>
+        <P class="lorem50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium ea nihil beatae, iusto nesciunt soluta consequuntur hic? Voluptates iusto eius ad quaerat cum consequuntur repellat fugiat facilis itaque nam.</P>
+        <ul>
+            <li>Jalali Set</li>
+            <li>Shafayet</li>
+            <li>bonobash</li>
+        </ul>
+    </section>
+    <section class="fruits-container">
+        <h2 id="fruits-title">
+            Fruits Collection
+        </h2>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+        </ul>
+    </section>
+    <section id="places-container" class="large-text">
+        <h1>
+            Travel Set
+        </h1>
+        <ul id="places-list">
+            <li class="important-place">Dhaka</li>
+            <li class="important-place">Khulna</li>
+            <li class="important-place">Bhola</li>
+            <li class="important-place">Dhaka</li>
+            <li >Khulna</li>
+            <li >Bhola</li>
+        </ul>
+    </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/stylein.js"></script>
+    <script>
+        // const student={
+        //     name:"shimul",
+        //     id:11,
+        //     study:function(time){
+        //         console.log("Study Kortece")
+        //     }
+        // }
+        const licollecttion=document.getElementsByTagName('li');
+        // console.log(licollecttion);
+        // for(const li of licollecttion){
+        //     console.log(li);
+        // }
+        // const allHeading = document.getElementsByTagName('h1')
+        // for (const h1 of allHeading){
+        //     console.log(h1)
+        // }
+        // const fruitstitle=document.getElementById('fruits-title');
+        // fruitstitle.innerText='Fruits Changed by Js'
+        // const places = document.getElementsByClassName('important-place')
+        // for (const p1 of places){
+        //     console.log(p1.innerHTML)
+        // }
+        // //query Selector all
+        // const someli=document.querySelectorAll('.fruits-container li');
+        // // console.log(someli);
+        // for (const li of someli){
+        //     console.log(li.innerHTML);
+        // }
+        //you have to learn html collection and node list
+ </script>
+</body>
+</html>

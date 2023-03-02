@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-section {
+            border-radius: 5px;
+            margin: 20px;
+            padding: 20px;
+            gap: 5px;
+            background-color: antiquewhite ;
+        }
+        h1{
+            font: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-section">
+        <h1>1. What is DOM and what is the purpose of DOM?</h1>
+        <p>DOM meaning Document Object Model. DOM, all html elements defined as object. This is a programming interface
+            for HTML and XML document . When web page reload inter browser DOM create html documents tree structure,
+            this is called dom. dom method using html element accessed modify, remove etc. Dom method behavior dynamic
+            web page. beside update content interactive web page.Dom mainly interactive main web page. the dom provides
+            several creating fantastic and innovative application.We can easily html all document getting and analysis
+            using Dom method.</p>
+
+
+        <h1>2. How will you select HTML elements using DOM? Name the DOM methods.</h1>
+        <p>We are know several method in the DOM that can use select HTML elements . There are some must commonly used
+            dom method we are discuss now .
+        <ul style="list-style-type:none;">
+            <li>getElementById()</li>
+            <p> At first emplane document getElementById . The getElementById method returns and element whose Id
+                matched at first string. getElementById faster way select element. getElementById method only available
+                in the document object. Id value must be unique . there is no need for separate function.
+
+            </p>
+
+            <li>getElementsByClassName()</li>
+            <p>getElementsByClassName method return an html collection of element that match pass the class name. Which a search for multiple class by passing the class name separate by whitespace. getElementByTagName can be called on any element and will return a live HTML collection. </p>
+
+
+            <li>getElementByTagName()</li>
+            <p>document.getElementsByTagName(tagName): selects all elements with the specified tag name .This method also returns an array-like object of all child elements with the given tag name.The returned
+                HTMLCollection is a live list that automatically updates node removal or addition.If you pass  universal selector, then it selects all the elements.The tag name passed is lower-cased internally before searching for elements.</p>
+
+            <li>querySelector()</li>
+            <p>The querySelector method returns the first element that matches the passed selector.querySelector can be called on document and element. If no elements match the selector, null is returned
+            The method takes a CSS selector as an argument, which is a string that describes a pattern of elements to select based on their attributes, classes, or tag names.</p>
+
+
+            <li>querySelectorAll()</li>
+            <p>The querySelector() is a method of the Element interface. The querySelector() method allows you to select the first element that matches one or more CSS selector.Besides the querySelector(), you can use the querySelectorAll() method to select all elements that match a CSS selector or a group of CSS selectors.</p>
+            <p></p>
+        </ul>
+        </p>
+
+
+
+        <h1>3. What is event bubble?</h1>
+         <p>One behavior these events have in common is Event Bubbling. I'll explain what this behavior meansEvent Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.The "Event Bubbling" behavior makes it possible for you to handle an event in a parent element instead of the actual element that received the event.</p>
+
+        <h1>4. What is a callback function and why will you use it?</h1>
+        <p> The main purpose of a callback function is to allow the calling function to call back or notify the caller that some task has been completed or some condition has been met, without the caller having to constantly poll or check for that condition. Callback functions are commonly used in event-driven programming, where they are passed to event handlers to be called when a certain event occurs. They are also used in asynchronous programming, where they are passed to asynchronous functions to be called when the asynchronous operation has completed.</p>
+
+    </div>
+
+
+
+</body>
+
+</html>
